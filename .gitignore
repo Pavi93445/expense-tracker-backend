@@ -31,3 +31,38 @@ build/
 
 ### VS Code ###
 .vscode/
+# 🔹 Maven build
+target/
+*.jar
+*.war
+*.ear
+
+# 🔹 Logs
+*.log
+logs/
+
+# 🔹 IntelliJ
+.idea/
+*.iml
+
+# 🔹 OS files
+.DS_Store
+Thumbs.db
+
+# 🔹 Environment / Secrets
+application.properties
+.env
+
+# 🔹 Temporary files
+*.tmp
+*.swp
+
+# 🔹 VS Code (if used)
+.vscode/
+
+# 🔹 Mac system files
+.AppleDouble
+.LSOverride
+
+# 🔹 Test output
+surefire-reports/
