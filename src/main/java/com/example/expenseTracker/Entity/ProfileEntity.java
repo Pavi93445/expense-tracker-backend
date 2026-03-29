@@ -17,16 +17,24 @@ public class ProfileEntity {
 
     private String password;
 
-    // 🔹 No-Args Constructor (IMPORTANT for JPA)
+    // 🔥 Email verification field
+    private boolean verified;
+
+    // 🔹 No-Args Constructor
     public ProfileEntity() {
     }
 
     // 🔹 All-Args Constructor
-    public ProfileEntity(Long id, String name, String email, String password) {
+    public ProfileEntity(Long id,
+                         String name,
+                         String email,
+                         String password,
+                         boolean verified) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
+        this.verified = verified;
     }
 
     // 🔹 Getters & Setters
@@ -63,7 +71,17 @@ public class ProfileEntity {
         this.password = password;
     }
 
-    // 🔹 toString (optional but useful for debugging)
+    // 🔥 Verified getter
+    public boolean isVerified() {
+        return verified;
+    }
+
+    // 🔥 Verified setter
+    public void setVerified(boolean verified) {
+        this.verified = verified;
+    }
+
+    // 🔹 toString
     @Override
     public String toString() {
         return "ProfileEntity{" +
@@ -71,6 +89,7 @@ public class ProfileEntity {
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", verified=" + verified +
                 '}';
     }
 }
