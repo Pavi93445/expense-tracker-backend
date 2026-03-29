@@ -52,6 +52,8 @@ Thumbs.db
 # 🔹 Environment / Secrets
 application.properties
 .env
+target/
+*.log
 
 # 🔹 Temporary files
 *.tmp
