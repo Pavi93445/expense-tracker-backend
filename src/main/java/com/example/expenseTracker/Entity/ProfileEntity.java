@@ -78,7 +78,7 @@ public class ProfileEntity {
 
     // 🔥 Verified setter
     public void setVerified(boolean verified) {
-        this.verified = verified;
+        this.verified = verified;   
     }
 
     // 🔹 toString
