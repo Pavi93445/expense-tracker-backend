@@ -1,8 +1,8 @@
-package com.example.expenseTracker.Controller;
+package com.example.expenseTracker.controller;
 
-import com.example.expenseTracker.Dto.RecurringExpenseRequestDto;
+import com.example.expenseTracker.dto.request.RecurringExpenseRequestDto;
 import com.example.expenseTracker.Entity.RecurringExpenseEntity;
-import com.example.expenseTracker.Service.RecurringExpenseService;
+import com.example.expenseTracker.service.RecurringExpenseService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 

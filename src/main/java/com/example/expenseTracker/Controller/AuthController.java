@@ -1,13 +1,13 @@
-package com.example.expenseTracker.Controller;
-import com.example.expenseTracker.Dto.AuthRequestDto;
-import com.example.expenseTracker.Dto.ChangePasswordRequestDto;
-import com.example.expenseTracker.Dto.LoginRequestDto;
-import com.example.expenseTracker.Dto.ProfileResponseDto;
-import com.example.expenseTracker.Dto.UpdateProfileRequestDto;
-import com.example.expenseTracker.Service.AuthService;
+package com.example.expenseTracker.controller;
+import com.example.expenseTracker.dto.request.AuthRequestDto;
+import com.example.expenseTracker.dto.request.ChangePasswordRequestDto;
+import com.example.expenseTracker.dto.request.LoginRequestDto;
+import com.example.expenseTracker.dto.respnse.ProfileResponseDto;
+import com.example.expenseTracker.dto.request.UpdateProfileRequestDto;
+import com.example.expenseTracker.service.AuthService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
-import com.example.expenseTracker.Dto.LoginResponseDto;
+import com.example.expenseTracker.dto.respnse.LoginResponseDto;
 
 @RestController
 @RequestMapping("/auth")

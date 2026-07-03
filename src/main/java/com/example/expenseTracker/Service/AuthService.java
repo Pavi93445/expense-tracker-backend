@@ -1,18 +1,22 @@
-package com.example.expenseTracker.Service;
+package com.example.expenseTracker.service;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.UUID;
 
-import com.example.expenseTracker.Dto.*;
-import com.example.expenseTracker.Repository.ProfileRepository;
+import com.example.expenseTracker.dto.request.AuthRequestDto;
+import com.example.expenseTracker.dto.request.ChangePasswordRequestDto;
+import com.example.expenseTracker.dto.request.LoginRequestDto;
+import com.example.expenseTracker.dto.request.UpdateProfileRequestDto;
+import com.example.expenseTracker.dto.respnse.ProfileResponseDto;
+import com.example.expenseTracker.repository.ProfileRepository;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.example.expenseTracker.Entity.ProfileEntity;
 import com.example.expenseTracker.Entity.VerificationToken;
-import com.example.expenseTracker.Repository.VerificationTokenRepository;
-import com.example.expenseTracker.Dto.LoginResponseDto;
+import com.example.expenseTracker.repository.VerificationTokenRepository;
+import com.example.expenseTracker.dto.respnse.LoginResponseDto;
 
 
 @Service

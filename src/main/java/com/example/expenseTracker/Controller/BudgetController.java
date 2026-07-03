@@ -1,8 +1,8 @@
-package com.example.expenseTracker.Controller;
+package com.example.expenseTracker.controller;
 
-import com.example.expenseTracker.Dto.BudgetRequestDto;
-import com.example.expenseTracker.Dto.BudgetStatusDto;
-import com.example.expenseTracker.Service.BudgetService;
+import com.example.expenseTracker.dto.request.BudgetRequestDto;
+import com.example.expenseTracker.dto.respnse.BudgetStatusDto;
+import com.example.expenseTracker.service.BudgetService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 

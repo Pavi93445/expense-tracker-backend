@@ -1,17 +1,15 @@
-package com.example.expenseTracker.Controller;
+package com.example.expenseTracker.controller;
 
-import com.example.expenseTracker.Dto.IncomeRequestDto;
+import com.example.expenseTracker.dto.request.IncomeRequestDto;
 import com.example.expenseTracker.Entity.IncomeEntity;
-import com.example.expenseTracker.Service.IncomeService;
+import com.example.expenseTracker.service.IncomeService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
-import com.example.expenseTracker.Dto.BalanceDashboardDto;
-import com.example.expenseTracker.Dto.MonthlyReportDto;
+import com.example.expenseTracker.dto.respnse.BalanceDashboardDto;
+import com.example.expenseTracker.dto.respnse.MonthlyReportDto;
 import java.util.List;
-import com.example.expenseTracker.Dto.AnalyticsResponseDto;
-import com.example.expenseTracker.Dto.TransactionResponseDto;
-
-import java.util.List;
+import com.example.expenseTracker.dto.respnse.AnalyticsResponseDto;
+import com.example.expenseTracker.dto.respnse.TransactionResponseDto;
 
 @RestController
 @RequestMapping("/income")

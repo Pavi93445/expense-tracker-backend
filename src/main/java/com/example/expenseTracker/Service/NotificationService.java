@@ -1,9 +1,9 @@
-package com.example.expenseTracker.Service;
+package com.example.expenseTracker.service;
 
 import com.example.expenseTracker.Entity.NotificationEntity;
 import com.example.expenseTracker.Entity.ProfileEntity;
-import com.example.expenseTracker.Repository.NotificationRepository;
-import com.example.expenseTracker.Repository.ProfileRepository;
+import com.example.expenseTracker.repository.NotificationRepository;
+import com.example.expenseTracker.repository.ProfileRepository;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;

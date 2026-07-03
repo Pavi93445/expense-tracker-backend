@@ -1,4 +1,4 @@
-package com.example.expenseTracker.Config;
+package com.example.expenseTracker.config;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import jakarta.annotation.PostConstruct;

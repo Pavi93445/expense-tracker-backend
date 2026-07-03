@@ -1,4 +1,4 @@
-package com.example.expenseTracker.Service;
+package com.example.expenseTracker.service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

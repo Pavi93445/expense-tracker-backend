@@ -1,4 +1,4 @@
-package com.example.expenseTracker.Dto;
+package com.example.expenseTracker.dto.request;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

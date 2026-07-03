@@ -1,4 +1,4 @@
-package com.example.expenseTracker.Repository;
+package com.example.expenseTracker.repository;
 
 import com.example.expenseTracker.Entity.ExpenseEntity;
 import com.example.expenseTracker.Entity.ProfileEntity;

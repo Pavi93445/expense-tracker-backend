@@ -1,4 +1,4 @@
-package com.example.expenseTracker.Config;
+package com.example.expenseTracker.config;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

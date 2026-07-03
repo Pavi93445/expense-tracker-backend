@@ -1,6 +1,6 @@
-package com.example.expenseTracker.Controller;
+package com.example.expenseTracker.controller;
 
-import com.example.expenseTracker.Service.PdfExportService;
+import com.example.expenseTracker.service.PdfExportService;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

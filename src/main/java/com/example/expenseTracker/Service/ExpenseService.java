@@ -1,13 +1,13 @@
-package com.example.expenseTracker.Service;
+package com.example.expenseTracker.service;
 
-import com.example.expenseTracker.Config.ApiResponse;
-import com.example.expenseTracker.Dto.DashboardResponseDto;
-import com.example.expenseTracker.Dto.ExpenseRequestDto;
-import com.example.expenseTracker.Dto.ExpenseResponseDto;
+import com.example.expenseTracker.config.ApiResponse;
+import com.example.expenseTracker.dto.respnse.DashboardResponseDto;
+import com.example.expenseTracker.dto.request.ExpenseRequestDto;
+import com.example.expenseTracker.dto.respnse.ExpenseResponseDto;
 import com.example.expenseTracker.Entity.ExpenseEntity;
 import com.example.expenseTracker.Entity.ProfileEntity;
-import com.example.expenseTracker.Repository.ExpenseRepository;
-import com.example.expenseTracker.Repository.ProfileRepository;
+import com.example.expenseTracker.repository.ExpenseRepository;
+import com.example.expenseTracker.repository.ProfileRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;

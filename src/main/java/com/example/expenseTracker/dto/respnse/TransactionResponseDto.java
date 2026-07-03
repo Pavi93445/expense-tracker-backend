@@ -1,4 +1,4 @@
-package com.example.expenseTracker.Dto;
+package com.example.expenseTracker.dto.respnse;
 
 import java.time.LocalDate;
 
