@@ -12,7 +12,7 @@ public class EnvConfig {
 
         // Load .env file from project root
         Dotenv dotenv = Dotenv.configure()
-                .directory("C:/Users/pavit/Downloads/expenseTracker/expenseTracker")
+                .directory("C:/Users/pavit/Downloads/expenseTracker")
                 .ignoreIfMalformed()
                 .ignoreIfMissing()
                 .load();
