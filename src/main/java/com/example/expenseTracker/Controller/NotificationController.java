@@ -1,7 +1,7 @@
-package com.example.expenseTracker.Controller;
+package com.example.expenseTracker.controller;
 
 import com.example.expenseTracker.Entity.NotificationEntity;
-import com.example.expenseTracker.Service.NotificationService;
+import com.example.expenseTracker.service.NotificationService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

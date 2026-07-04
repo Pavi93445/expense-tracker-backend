@@ -1,10 +1,10 @@
-package com.example.expenseTracker.Controller;
+package com.example.expenseTracker.controller;
 
-import com.example.expenseTracker.Config.ApiResponse;
-import com.example.expenseTracker.Dto.ExpenseRequestDto;
-import com.example.expenseTracker.Dto.ExpenseResponseDto;
+import com.example.expenseTracker.config.ApiResponse;
+import com.example.expenseTracker.dto.request.ExpenseRequestDto;
+import com.example.expenseTracker.dto.respnse.ExpenseResponseDto;
 import com.example.expenseTracker.Entity.ExpenseEntity;
-import com.example.expenseTracker.Service.ExpenseService;
+import com.example.expenseTracker.service.ExpenseService;
 import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;

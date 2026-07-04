@@ -1,4 +1,4 @@
-package com.example.expenseTracker.Service;
+package com.example.expenseTracker.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;

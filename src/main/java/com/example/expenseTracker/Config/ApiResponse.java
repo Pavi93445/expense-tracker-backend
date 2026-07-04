@@ -1,4 +1,4 @@
-package com.example.expenseTracker.Config;
+package com.example.expenseTracker.config;
 
 public class ApiResponse<T> {
 

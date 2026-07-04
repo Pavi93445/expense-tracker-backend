@@ -1,13 +1,13 @@
-package com.example.expenseTracker.Service;
+package com.example.expenseTracker.service;
 
-import com.example.expenseTracker.Dto.BudgetRequestDto;
-import com.example.expenseTracker.Dto.BudgetStatusDto;
+import com.example.expenseTracker.dto.request.BudgetRequestDto;
+import com.example.expenseTracker.dto.respnse.BudgetStatusDto;
 import com.example.expenseTracker.Entity.BudgetEntity;
 import com.example.expenseTracker.Entity.ExpenseEntity;
 import com.example.expenseTracker.Entity.ProfileEntity;
-import com.example.expenseTracker.Repository.BudgetRepository;
-import com.example.expenseTracker.Repository.ExpenseRepository;
-import com.example.expenseTracker.Repository.ProfileRepository;
+import com.example.expenseTracker.repository.BudgetRepository;
+import com.example.expenseTracker.repository.ExpenseRepository;
+import com.example.expenseTracker.repository.ProfileRepository;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;

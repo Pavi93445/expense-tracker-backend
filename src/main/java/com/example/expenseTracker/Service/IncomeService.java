@@ -1,21 +1,21 @@
-package com.example.expenseTracker.Service;
-import com.example.expenseTracker.Dto.BalanceDashboardDto;
+package com.example.expenseTracker.service;
+import com.example.expenseTracker.dto.respnse.BalanceDashboardDto;
 import com.example.expenseTracker.Entity.ExpenseEntity;
-import com.example.expenseTracker.Repository.ExpenseRepository;
-import com.example.expenseTracker.Dto.AnalyticsResponseDto;
+import com.example.expenseTracker.repository.ExpenseRepository;
+import com.example.expenseTracker.dto.respnse.AnalyticsResponseDto;
 import java.util.ArrayList;
 
-import com.example.expenseTracker.Dto.IncomeRequestDto;
+import com.example.expenseTracker.dto.request.IncomeRequestDto;
 import com.example.expenseTracker.Entity.IncomeEntity;
 import com.example.expenseTracker.Entity.ProfileEntity;
-import com.example.expenseTracker.Repository.IncomeRepository;
-import com.example.expenseTracker.Repository.ProfileRepository;
+import com.example.expenseTracker.repository.IncomeRepository;
+import com.example.expenseTracker.repository.ProfileRepository;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
-import com.example.expenseTracker.Dto.MonthlyReportDto;
+import com.example.expenseTracker.dto.respnse.MonthlyReportDto;
 import java.time.LocalDate;
-import com.example.expenseTracker.Dto.TransactionResponseDto;
+import com.example.expenseTracker.dto.respnse.TransactionResponseDto;
 import java.util.Comparator;
 import java.util.List;
 

@@ -1,9 +1,9 @@
-package com.example.expenseTracker.Service;
+package com.example.expenseTracker.service;
 
 import com.example.expenseTracker.Entity.ExpenseEntity;
 import com.example.expenseTracker.Entity.ProfileEntity;
-import com.example.expenseTracker.Repository.ExpenseRepository;
-import com.example.expenseTracker.Repository.ProfileRepository;
+import com.example.expenseTracker.repository.ExpenseRepository;
+import com.example.expenseTracker.repository.ProfileRepository;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.layout.Document;

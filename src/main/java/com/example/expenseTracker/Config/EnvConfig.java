@@ -1,4 +1,4 @@
-package com.example.expenseTracker.Config;
+package com.example.expenseTracker.config;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import jakarta.annotation.PostConstruct;
@@ -10,20 +10,17 @@ public class EnvConfig {
     @PostConstruct
     public void init() {
 
-        // Load .env file from project root
+        // Loads .env locally; in production, real environment variables take precedence
         Dotenv dotenv = Dotenv.configure()
-                .directory("C:/Users/pavit/Downloads/expenseTracker/expenseTracker")
                 .ignoreIfMalformed()
                 .ignoreIfMissing()
                 .load();
 
-        // Load variables safely
         setIfPresent("MAIL_USERNAME", dotenv);
         setIfPresent("MAIL_PASSWORD", dotenv);
         setIfPresent("DB_PASSWORD", dotenv);
         setIfPresent("JWT_SECRET", dotenv);
 
-        // Debug (optional - remove later)
         System.out.println("ENV Loaded ✅");
     }
 

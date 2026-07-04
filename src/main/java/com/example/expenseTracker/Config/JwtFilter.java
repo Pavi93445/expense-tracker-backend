@@ -1,6 +1,6 @@
-package com.example.expenseTracker.Config;
+package com.example.expenseTracker.config;
 
-import com.example.expenseTracker.Service.JwtService;
+import com.example.expenseTracker.service.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

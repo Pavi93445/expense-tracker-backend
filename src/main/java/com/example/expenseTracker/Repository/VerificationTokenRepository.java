@@ -1,4 +1,4 @@
-package com.example.expenseTracker.Repository;
+package com.example.expenseTracker.repository;
 
 import java.util.Optional;
 
