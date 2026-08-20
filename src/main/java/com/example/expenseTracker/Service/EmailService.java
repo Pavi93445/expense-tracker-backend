@@ -27,7 +27,7 @@ public class EmailService {
 
                         verificationLink + "\n\n" +
 
-                        "⏳ Note: This link will expire in 30 minutes.\n\n" +
+                        "⏳ Note: This link will expire in 10 minutes.\n\n" +
 
                         "Once verified, you can:\n" +
                         "✔ Track your expenses easily\n" +
