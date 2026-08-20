@@ -17,10 +17,10 @@ public class ProfileEntity {
 
     private String password;
 
-    // 🔥 Email verification field
+    // Email verification field
     private boolean verified;
 
-    // 🔹 No-Args Constructor
+    // No-Args Constructor
     public ProfileEntity() {
     }
 
@@ -71,17 +71,14 @@ public class ProfileEntity {
         this.password = password;
     }
 
-    // 🔥 Verified getter
     public boolean isVerified() {
         return verified;
     }
 
-    // 🔥 Verified setter
     public void setVerified(boolean verified) {
         this.verified = verified;   
     }
-
-    // 🔹 toString
+ 
     @Override
     public String toString() {
         return "ProfileEntity{" +

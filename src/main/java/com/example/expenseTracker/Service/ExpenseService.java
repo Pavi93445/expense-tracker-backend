@@ -52,7 +52,7 @@ public class ExpenseService {
         expense.setAmount(request.getAmount());
         expense.setCategory(request.getCategory());
         expense.setExpenseDate(request.getExpenseDate());
-        expense.setDescription(request.getDescription());
+        expense.setDescription(request.getDescription()); 
         expense.setUser(user);
 
         expenseRepository.save(expense);
@@ -180,7 +180,6 @@ public class ExpenseService {
         for (int i = 0; i < limit; i++) {
             result.add(mapToResponse(expenses.get(i)));
         }
-
         return result;
     }
 

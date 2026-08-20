@@ -16,9 +16,11 @@ public class EnvConfig {
                 .ignoreIfMissing()
                 .load();
 
+        setIfPresent("DB_URL", dotenv);
+        setIfPresent("DB_USERNAME", dotenv);
+        setIfPresent("DB_PASSWORD", dotenv);
         setIfPresent("MAIL_USERNAME", dotenv);
         setIfPresent("MAIL_PASSWORD", dotenv);
-        setIfPresent("DB_PASSWORD", dotenv);
         setIfPresent("JWT_SECRET", dotenv);
 
         System.out.println("ENV Loaded ✅");

@@ -57,7 +57,7 @@ public class AuthService {
 
         VerificationToken token = new VerificationToken();
         token.setToken(tokenValue);
-        token.setExpiryTime(LocalDateTime.now().plusMinutes(30));
+        token.setExpiryTime(LocalDateTime.now().plusMinutes(10));
         token.setUser(savedUser);
 
         tokenRepository.save(token);
@@ -129,7 +129,6 @@ public class AuthService {
             return "User not found";
         }
 
-        // Email already used by another user ah check pannrom
         Optional<ProfileEntity> existingUser = repository.findByEmail(request.getEmail());
 
         if (existingUser.isPresent() && !existingUser.get().getId().equals(id)) {
@@ -153,17 +152,14 @@ public class AuthService {
 
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
-        // old password match aagudha check
         if (!encoder.matches(request.getOldPassword(), user.getPassword())) {
             return "Old password is incorrect";
         }
 
-        // optional small validation
         if (request.getNewPassword() == null || request.getNewPassword().length() < 6) {
             return "New password must be at least 6 characters";
         }
 
-        // same password ah veika koodadhu
         if (encoder.matches(request.getNewPassword(), user.getPassword())) {
             return "New password cannot be same as old password";
         }
